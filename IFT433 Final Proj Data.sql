@@ -384,3 +384,35 @@ INSERT INTO StoreSaleLineItem VALUES
 	(27, 13, 13.59, 4),
 	(39, 7, 18.85, 8)
 ;
+
+/*Filling out the other Tables */
+Insert into Supplier Values
+	('Everything Supplies', GetDate(), '9999 Everything Way', 'Rachel Booo'),
+	('Sometime Supplies', GetDate(), '0001 Maybe Dr.', 'Larry Harry'),
+	('Buy Moar Supplies', GetDate(), '1122 Here Place', 'Michael Moore'),
+	('Hook Me Things', GetDate(), '1111 Derrick St', 'Alina	Mcelroy'),
+	('Buy-Tech-Shop', Getdate(), '8475 Where Hr', 'Nakisha Freitas'),
+	('Bakery Diamond', GetDate(), '19 Eaters St.', 'Hulk Smash'),
+	('Good Supplies', GetDate(), '69 Sunshine Way', 'Black Canary'),
+	('Black Sugar', GetDate(), '99 Balloon St', 'Rick Morty')
+;
+
+Insert into Employee values
+	('Ashley', 'Smash', 'Junior Baker', 64, 10000, 235511919),
+	('Liz', 'Lions', 'Line Baker', 22,  8000, 992837234),
+	('Phil', 'Nike', 'Mascot', 31, 5000, 119921234)
+;
+
+Insert into Pay Values
+	(2, 1, 40, 52.08, '10/30/2017',' 11/13/2017'),
+	(2, 2, 24, 10.41, '10/30/2017',' 11/13/2017'),
+	(2, 3, 24, 4.16, '10/30/2017',' 11/13/2017'),
+	(2, 4, 20, 4.16, '10/30/2017',' 11/13/2017'),
+	(2, 5, 10, 10.41, '10/30/2017',' 11/13/2017'),
+	(3, 1, 40, 52.08, '10/30/2017',' 11/13/2017'),
+	(3, 2, 24, 10.41, '10/30/2017',' 11/13/2017'),
+	(3, 3, 24, 4.16, '10/30/2017',' 11/13/2017'),
+	(3, 4, 20, 4.16, '10/30/2017',' 11/13/2017'),
+	(3, 5, 10, 10.41, '10/30/2017',' 11/13/2017')
+;
+--Must adjust the dates the Pay Table. Done using alter
