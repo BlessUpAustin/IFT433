@@ -53,3 +53,11 @@ From
 	Join FoodItem On Inventory.InventoryID = FoodItem.InventoryID
 Order by cusRating Desc
 ;
+
+Create View Overtime As 
+Select * 
+From 
+	Pay
+Where 
+	hrsWrked > 40
+With CHECK OPTION;
