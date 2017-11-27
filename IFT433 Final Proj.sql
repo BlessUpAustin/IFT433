@@ -121,7 +121,8 @@ CREATE TABLE StoreSaleLineItem (
 
 --DCL here
 
-CREATE LOGIN chef WITH PASSWORD = 'cupcake';
 CREATE USER chef;
+
+--CREATE LOGIN chef WITH PASSWORD = 'cupcake';
 
 GRANT select, alter, insert ON Recipe TO chef;
