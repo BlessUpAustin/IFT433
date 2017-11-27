@@ -6,7 +6,7 @@ Select * from StoreSaleLineItem;
 Select * from Sales;
 Select * from Inventory order by ListPrice Desc;
 
-/*Sample recipt select statement with joins here. Using the joing statments we determine the 
+/*Sample receipt select statement with joins here. Using the join statements we determine the 
 customer and the employee that put in the order. It is ordered by CustomerID.*/
 
 
@@ -20,7 +20,7 @@ Select * from Sales;
 Select * from Inventory order by ListPrice Desc;
 Select * from Supplier;
 
-/*Sample recipt select statement with joins here. Using the joing statments we determine the 
+/*Sample receipt select statement with joins here. Using the join statements we determine the 
 customer and the employee that put in the order. It is ordered by CustomerID.*/
 
 Select 
@@ -40,7 +40,7 @@ Order By
 	SS.invoiceID
 ;
 
-/*We want to get the top ten items in our inventory that is more than the average price of all items in the invetory.
+/*We want to get the top ten items in our inventory that are more than the average price of all items in the inventory.
 As well as the inventory so that if we need to order more we can */
 
 Select Top 10
