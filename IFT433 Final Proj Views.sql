@@ -53,6 +53,7 @@ From
 	Join FoodItem On Inventory.InventoryID = FoodItem.InventoryID
 Order by cusRating Desc
 ;
+Go
 
 DROP VIEW IF EXISTS Overtime;
 GO
