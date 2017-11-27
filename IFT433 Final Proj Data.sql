@@ -1,3 +1,5 @@
+---Run me second!---
+
 -- Begin adding data to tables
 Use IFTProject;
 --Customer Data
