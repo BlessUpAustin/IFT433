@@ -73,7 +73,7 @@ CREATE TABLE FoodItem (
   cusRating INT,
   PRIMARY KEY (ItemID),
   FOREIGN KEY (InventoryID) REFERENCES Inventory(InventoryID),
-  CONSTRAINT cusRating CHECK (cusRating > 0 and cusRating <5)
+  CONSTRAINT cusRating CHECK (cusRating > 0 and cusRating <6)
 );
 
 CREATE TABLE Purchase (
