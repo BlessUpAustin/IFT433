@@ -1,4 +1,5 @@
 Use Master;
+GO
 
 Drop DATABASE IF EXISTS IFTProject;
 GO
@@ -30,7 +31,7 @@ CREATE TABLE Customer (
 );
 
 CREATE TABLE Sales (
-  invoiceID INT IDENTITY(1,1),
+  InvoiceID INT IDENTITY(1,1),
   EmpID INT,
   CustID INT,
   SaleTime DateTime DEFAULT GETDATE(),
@@ -40,7 +41,7 @@ CREATE TABLE Sales (
 CREATE TABLE Supplier (
   SupplyID INT IDENTITY(1,1),
   Name VARCHAR (20) NOT NULL,
-  StartDATE DATE,
+  StartDate DATE,
   Address VARCHAR (20),
   Rep VARCHAR (20),
   PRIMARY KEY (SupplyID)
@@ -49,15 +50,15 @@ CREATE TABLE Supplier (
 CREATE TABLE Inventory (
   InventoryID INT IDENTITY(1,1),
   ItemID INT NOT NULL,
-  itemName nVARCHAR (40),
+  ItemName nVARCHAR (40),
   Stock INT,
   ListPrice MONEY,
   Desciption VARCHAR (100),
   PRIMARY KEY (InventoryID)
  );
  
-CREATE TABLE ingredient (
-  ingredientID INT IDENTITY(1,1),
+CREATE TABLE Ingredient (
+  IngredientID INT IDENTITY(1,1),
   ItemID INT,
   Measurement VARCHAR (20),
   Primary Key (ingredientID)
@@ -68,7 +69,7 @@ CREATE TABLE FoodItem (
   ItemID INT IDENTITY(1,1),
   InventoryID INT,
   RecipeID INT,
-  DATEMade DATE,
+  DateMade DATE,
   cusRating INT,
   PRIMARY KEY (ItemID),
   FOREIGN KEY (InventoryID) REFERENCES Inventory(InventoryID)
@@ -96,7 +97,7 @@ CREATE TABLE Pay (
 CREATE TABLE Recipe (
   RecipeID INT IDENTITY(1,1),
   ingredientID INT,
-  DATECREATEd DATE,
+  DateCreated DATE,
   creatorID INT,
   Qty Varchar (20),
   PRIMARY KEY (RecipeID),

@@ -73,14 +73,14 @@ Insert into Employee Values
 	('David', 'Spade', 'Sales2', 18, 8000,101295656)
 	;
 -- Must add constraint to age
-Alter table employee
+Alter table Employee
 Add Check (Age < 100);
 
 --Inventory Data --Don't need the ItemID
 --During our database creation we realized that there can be some change in our columns
 Select * from Inventory;
 
-Alter Table inventory
+Alter Table Inventory
 Drop column ItemID;
 GO
 
@@ -152,16 +152,16 @@ INSERT INTO FoodItem VALUES
 GO
 /*Here are the ingredients to the said FoodItems. It's documented here because we would like to know
 when we need to stock up on ingredients for our recipes*/
-Select * from ingredient;
+Select * from Ingredient;
 Select * from Inventory;
 
 Alter Table ingredient
 	Add RefFoodItem Int;
 GO
 
-Insert into ingredient Values
+Insert into Ingredient Values
 	(31, '15g', 1);
-Insert Into ingredient Values
+Insert Into Ingredient Values
 	(15, '10 Cup', 1);
 
 --Recipe data insert
@@ -174,7 +174,7 @@ Insert into Recipe Values
 Insert Into Recipe Values
 	(2, GETDATE(), 1, '15g');
 
-Select * from pay;
+Select * from Pay;
 Select * from Employee;
 Alter Table Pay
 	Add PayRate Money;
