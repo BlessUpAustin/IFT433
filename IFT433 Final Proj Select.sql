@@ -40,7 +40,7 @@ Order By
 	SS.invoiceID
 ;
 
-/*I want to get the top ten items in our inventory that is more than the average price of all items in the invetory.
+/*We want to get the top ten items in our inventory that is more than the average price of all items in the invetory.
 As well as the inventory so that if we need to order more we can */
 
 Select Top 10

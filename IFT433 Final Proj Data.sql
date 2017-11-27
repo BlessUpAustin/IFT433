@@ -66,7 +66,7 @@ Insert into Employee Values
 	('Nate', 'Hampster', 'Accountant', 20, 20000, 123456789)
 ;
 
---Thought I could use a few more employees 
+--Thought we could use a few more employees 
 Insert into Employee Values
 	('Zach', 'Rivers', 'Sales1', 20, 12000,983475983),
 	('Harper', 'Collins', 'Sales1', 29, 10000, 654379393),

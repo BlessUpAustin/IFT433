@@ -1,6 +1,6 @@
 Use Master;
 
-Drop DATABASE IFTProject;
+Drop DATABASE IF EXISTS IFTProject;
 GO
 --Creating the DATABASE
 CREATE DATABASE IFTProject;
