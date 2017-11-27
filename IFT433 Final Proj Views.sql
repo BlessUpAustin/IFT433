@@ -54,6 +54,9 @@ From
 Order by cusRating Desc
 ;
 
+DROP VIEW IF EXISTS Overtime;
+GO
+
 Create View Overtime As 
 Select * 
 From 
