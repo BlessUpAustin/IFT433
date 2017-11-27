@@ -116,3 +116,10 @@ CREATE TABLE StoreSaleLineItem (
   FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID)
 );
 
+
+--DCL here
+
+CREATE LOGIN chef WITH PASSWORD = 'cupcake';
+CREATE USER chef;
+
+GRANT select, alter, insert ON Recipe TO chef;

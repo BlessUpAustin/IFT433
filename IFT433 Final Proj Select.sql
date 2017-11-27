@@ -2,18 +2,6 @@ Use IFTProject;
 
 Select * from Customer;
 Select * from Employee;
-Select * from StoreSaleLineItem;
-Select * from Sales;
-Select * from Inventory order by ListPrice Desc;
-
-/*Sample receipt select statement with joins here. Using the join statements we determine the 
-customer and the employee that put in the order. It is ordered by CustomerID.*/
-
-
-Use IFTProject;
-
-Select * from Customer;
-Select * from Employee;
 Select * from pay;
 Select * from StoreSaleLineItem order by invoiceID;
 Select * from Sales;
