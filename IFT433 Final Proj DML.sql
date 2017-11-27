@@ -1,6 +1,6 @@
 Use IFTProject;
 
-/*Updating the data in the Pay table because we need to alter the days which the pay periods are set to were all the same
+/*Updating the data in the Pay table because we need to alter the days which the pay periods are set to where all the same
 */
 
 Begin Tran
