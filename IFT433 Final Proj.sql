@@ -20,7 +20,7 @@ CREATE TABLE Employee (
   Salary MONEY,
   SS# INT,
   PRIMARY KEY (EmpID),
-  CONSTRAINT Age CHECK (Age > 17 and SS# > 99999999)
+  CONSTRAINT Age CHECK (Age > 17 and SS# > 99999999) ---Cupcake business is for adults
 );
 
 CREATE TABLE Customer (
@@ -120,9 +120,9 @@ CREATE TABLE StoreSaleLineItem (
 
 
 --DCL here
-
+DROP USER IF EXISTS chef;
 CREATE USER chef;
 
 --CREATE LOGIN chef WITH PASSWORD = 'cupcake';
-
+--Chef can read, change, and create new recipes, but that's it.
 GRANT select, alter, insert ON Recipe TO chef;

@@ -29,8 +29,8 @@ Select
 	Sales.EmpID,
 	Sales.invoiceID,
 	itemName,
-	CONVERT(varchar, Sales.SaleTime, 100) AS 'DateTime',
-	SSLI.SalePice * Quantity As 'Item Total'
+	CONVERT(varchar, Sales.SaleTime, 100) AS 'DateTime', ---Convert to more human readable format
+	SSLI.SalePice * Quantity As 'Item Total' ---Calculate the total purchase
 From
 	Sales 
 	Join StoreSaleLineItem SSLI ON Sales.invoiceID = SSLI.invoiceID

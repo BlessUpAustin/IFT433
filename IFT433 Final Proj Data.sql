@@ -4,7 +4,10 @@
 Use IFTProject;
 --Customer Data
 /*Created a database of current customers that visit our bakery*/
+
+
 Insert Into Customer Values
+-----Firstname, Lastname, Address, Date Entered
 	('Vincent', 'Li', '1234 Place Pl.', Getdate()),
 	('Thibaut', 'Henkens', '31014 Portage Road', GetDate()),
 	('Ema', 'Woolley', '34 Hovde Junction', GetDate()),
@@ -85,9 +88,10 @@ Select * from Inventory;
 Alter Table Inventory
 Drop column ItemID;
 GO
-
+Select * from inventory;
 --Test inventory
 Insert Into Inventory Values
+----Item Name, Stock, ListPrice, Description
 	('Biscotti', 5, 12.99, 'This is a biscuit'),
 	('Danish', 99, 23.55,'Convallis Limited'),
 	('Muffins', 80, 22.57,'Id Sapien Foundation'),
@@ -141,6 +145,7 @@ Insert into FoodItem Values
 /*We've got a big list of Items in our inventory but it is further
 subcategorized as food items here*/
 INSERT INTO FoodItem VALUES
+----InentoryID, RecipeID, DateMade, Customer Rating
 	(2,38,'2017-04-27 16:21:29',2),
 	(3,56,'2017-02-08 04:51:40',5),
 	(4,31,'2017-03-10 21:36:30',2),
@@ -199,7 +204,7 @@ Insert Into Pay Values
 Insert into Pay Values
 	(1, 8, 15, 4.16, '10/30/2017',' 11/13/2017');
 
-/*Added the start_date and end_date so i have to modify the table here */
+/*Added the start_date and end_date so we have to modify the table here */
 
 Update Pay
 Set End_date = '11-13-2017'

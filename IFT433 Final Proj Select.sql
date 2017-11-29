@@ -1,7 +1,7 @@
 ---Run me fourth!---
 
 Use IFTProject;
-
+---Select everything!
 Select * from Customer;
 Select * from Employee;
 Select * from pay;
@@ -19,7 +19,7 @@ Select
 	Cus.CustID,
 	Sales.EmpID,
 	Sales.SaleTime,
-	cus.LastName+', '+ Cus.FirstName As CustomerName
+	cus.LastName+', '+ Cus.FirstName As CustomerName ---format the name into human readable format
 From
 	Customer Cus 
 	Join Sales On Cus.CustID = Sales.CustID
@@ -38,13 +38,13 @@ Select Top 10
 	itemName,
 	ListPrice,
 	Stock,
-	Case
+	Case ---We want to know when to purchase more inventory
 		When Stock < 30 Then 'Buy'
 		Else 'Enough stock'
 	End As 'Should We Order?'
 From
 	Inventory
-Where
+Where	---Subquery to compare listprice against the average saleprice
 	ListPrice > (Select AVG(SalePice) From StoreSaleLineItem)
 Order By 
 	ListPrice Desc
